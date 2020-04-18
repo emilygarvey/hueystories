@@ -18,7 +18,9 @@ let prompts = [
     "What's a family recipe that should be remembered?",
     "Describe a member of our family in your own words.",
     "Which annual family gathering do you enjoy the most? Why?",
-    "Choose one word to describe Pau-Pau. Explain why."
+    "Choose one word to describe Pau-Pau. Explain why.",
+    "Share a story from a family vacation.",
+    "Tell a story about a sibling."
 ];
 
 let promptChoice = prompts[Math.floor(Math.random()*prompts.length)];
