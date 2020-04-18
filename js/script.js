@@ -20,7 +20,8 @@ let prompts = [
     "Which annual family gathering do you enjoy the most? Why?",
     "Choose one word to describe Pau-Pau. Explain why.",
     "Share a story from a family vacation.",
-    "Tell a story about a sibling."
+    "Tell a story about a sibling.",
+    "Explain a Chinese belief that you follow."
 ];
 
 let promptChoice = prompts[Math.floor(Math.random()*prompts.length)];
