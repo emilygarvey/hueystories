@@ -29,10 +29,17 @@ let prompts = [
     "What is one of your most embarassing moments?",
     "What's the hardest lesson you've ever had to learn?",
     "What's the last thing that surprised you?",
-    "What was one of your most joyful moments?",
+    "What is one of your most treasured memories?",
     "What do you consider your greatest accomplishment?",
     "What is one of your earliest memories?",
-    "Who's the person in your life that makes you believe in good people? Why?"
+    "Who's the person in your life that makes you believe in good people? Why?",
+    "What's the first job you ever had? What did you learn from it?",
+    "Who is your hero? Why?",
+    "What do you believe happens to you after you die?",
+    "What is your personal mantra?",
+    "What would consistute a perfect day for you?",
+    "For what in your life do you feel most grateful?",
+    "What is one quality you hope to pass on to your children?"
 ];
 
 let promptChoice = prompts[Math.floor(Math.random()*prompts.length)];
