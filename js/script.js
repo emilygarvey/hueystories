@@ -28,7 +28,6 @@ $("form").on('submit', function(e) {
     e.preventDefault();
     storiesData.name = $("#name").val();
     storiesData.story = $("#story").val();
-    console.log(storiesData);
     $("#name").val('');
     $("#story").val('');
     var storiesReference = database.ref('stories');
