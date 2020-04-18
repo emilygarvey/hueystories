@@ -1,25 +1,40 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Code Nation Hackathon</title>
+    <title>Tell me a Huey Story</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <!-- Your CSS Linked Below-->
     <link rel="stylesheet" href="css/styles.css">
-    <!-- jQuery Linked Below-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-     <!-- Bootstrap Javascript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <!-- Your Javascript Linked Below-->
-    <script src="js/script.js" defer></script> 
+    
   </head>
   <body>
-    <h1>Are you ready to Hack the Impact?</h1>
-    <p>
-      <a href="page-one.html"> Link to page-one.html</a>
-    </p>
+    <h1>Tell me a Huey Story.</h1>
+    <div class="main">
+      <p id="prompt">Prompt:</p>
+      <form>
+        <input id="name" placeholder="Name">
+        <textarea id="story" rows="4" cols="50" placeholder="Type your story here."></textarea>
+        <button>Submit</button>
+      </form>
+    </div>
+    <div id="why">
+      <h2>Family memories are important.</h2>
+      <p>
+        Now, more than ever, I am realizing that there is so much I don't know -- and so much I'm going to wish I had archived. 
+        Please help me by sharing your favorite and most important Huey memories. I'd love to collect and distribute the results of this project
+        to everyone in our family. No question is mandatory (just refresh the page for a new prompt) and feel free to leave your story
+        anonymous if you wish as well. The results are saved in a secure database that I can't fully explain, but I guarantee that only I have
+        access to. Thank you.        
+      </p>
+    </div>
+
+
+
+    <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="js/script.js" defer></script> 
   </body>
 </html>

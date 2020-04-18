@@ -1,3 +1,14 @@
+body {
+  margin: 2em;
+}
+
 h1 {
-  color: fuchsia;
+  color: green;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 500px;
 }
