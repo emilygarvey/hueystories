@@ -22,7 +22,17 @@ let prompts = [
     "Share a story from a family vacation.",
     "Tell a story about a sibling.",
     "Explain a Chinese belief that you follow.",
-    "What's your go-to dim sum order?"
+    "What's your go-to dim sum order?",
+    "What is the greatest act of kindness someone has ever done for you?",
+    "If you had $1Bn and no limitations, what would you do with it?",
+    "What's one experience you had that you'll never forget?",
+    "What is one of your most embarassing moments?",
+    "What's the hardest lesson you've ever had to learn?",
+    "What's the last thing that surprised you?",
+    "What was one of your most joyful moments?",
+    "What do you consider your greatest accomplishment?",
+    "What is one of your earliest memories?",
+    "Who's the person in your life that makes you believe in good people? Why?"
 ];
 
 let promptChoice = prompts[Math.floor(Math.random()*prompts.length)];
