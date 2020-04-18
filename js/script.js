@@ -21,7 +21,8 @@ let prompts = [
     "Choose one word to describe Pau-Pau. Explain why.",
     "Share a story from a family vacation.",
     "Tell a story about a sibling.",
-    "Explain a Chinese belief that you follow."
+    "Explain a Chinese belief that you follow.",
+    "What's your go-to dim sum order?"
 ];
 
 let promptChoice = prompts[Math.floor(Math.random()*prompts.length)];
@@ -29,11 +30,12 @@ $("#prompt").text(promptChoice);
 
 $("form").on('submit', function(e) {
     e.preventDefault();
+    storiesData.prompt = promptChoice;
     storiesData.name = $("#name").val();
     storiesData.story = $("#story").val();
     $("#name").val('');
     $("#story").val('');
     var storiesReference = database.ref('stories');
     storiesReference.push(storiesData);
-    $(".main").html("<h3>Thank you for submitting your story.</h3>");
+    $(".main").html("<h3>Thank you for submitting your story.<h3> <h4>Email Emily if you have a question you'd like to add.</h4>");
   });

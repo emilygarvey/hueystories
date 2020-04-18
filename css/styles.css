@@ -1,9 +1,10 @@
 body {
-  margin: 2em;
+  margin: 3em;
+  font-family: Arial, Helvetica, san-serif;
 }
 
 h1 {
-  color: green;
+  color: crimson;
 }
 
 .main {
@@ -16,5 +17,13 @@ h1 {
 
 #why {
   width: 500px;
-  border: 1px solid black;
+  border: 3px solid crimson;
+  background-color: black;
+  padding: 10px;
+}
+#why p {
+  color: whitesmoke;
+}
+#why h2 {
+  color: crimson;
 }
