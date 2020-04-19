@@ -39,11 +39,12 @@ let prompts = [
     "What is your personal mantra?",
     "What would consistute a perfect day for you?",
     "For what in your life do you feel most grateful?",
-    "What is one quality you hope to pass on to your children?"
-];
+    "What is one quality you hope to pass on to your children?",
+    "Who taught you how to drive? What was your first car?",
+    "What's your favorite memory from 419 Long Ridge Road?"
+    ];
 
 let promptChoice = prompts[Math.floor(Math.random()*prompts.length)];
-$("#prompt").text(promptChoice);
 
 $("form").on('submit', function(e) {
     e.preventDefault();
@@ -56,3 +57,8 @@ $("form").on('submit', function(e) {
     storiesReference.push(storiesData);
     $(".main").html("<h3>Thank you for submitting your story.<h3> <h4>Email Emily if you have a question you'd like to add.</h4>");
   });
+
+  $("#random").click(function() {
+    promptChoice = prompts[Math.floor(Math.random()*prompts.length)];
+    $("#prompt").text(promptChoice);
+  })
