@@ -48,20 +48,14 @@ let promptChoice = prompts[Math.floor(Math.random()*prompts.length)];
 
 $("form").on('submit', function(e) {
     e.preventDefault();
-    let storyInput = $("#story").val();
     storiesData.prompt = promptChoice;
     storiesData.name = $("#name").val();
     storiesData.story = $("#story").val();
-    console.log("empty");
-    if (storyInput === '') {
-        alert("Please write a story before submitting");
-    } else {
-        $("#name").val('');
-        $("#story").val('');
-        var storiesReference = database.ref('stories');
-        storiesReference.push(storiesData);
-        $(".main").html("<h3>Thank you for submitting your story.<h3> <h4>Email Emily if you have a question you'd like to add.</h4>");
-    }
+    $("#name").val('');
+    $("#story").val('');
+    var storiesReference = database.ref('stories');
+    storiesReference.push(storiesData);
+    $(".main").html("<h3>Thank you for submitting your story.<h3> <h4>Email Emily if you have a question you'd like to add.</h4>");
 });
 
   $("#random").click(function() {
